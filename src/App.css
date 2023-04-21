@@ -229,11 +229,17 @@ span.star {
 }
 
 .banner3{
-  background: url(E:/Parth/digital-india/src/img/fimg1.jpg);
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(E:/Parth/digital-india/src/img/fimg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   /* height: 100vh; */
   padding: 100px 0 100px 0;
   position: relative;
+}
+.attach1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }

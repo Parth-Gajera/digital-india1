@@ -4,8 +4,12 @@ import star from "../img/star .png"
 import ficon1 from "../img/ficon1.png"
 import ficon2 from "../img/ficon2.png"
 import ficon3 from "../img/ficon3.png"
+import ficon4 from "../img/ficon4.png"
+import ficon5 from "../img/ficon5.png"
+import ficon6 from "../img/ficon6.png"
+import ficon7 from "../img/ficon7.png"
+import ficon8 from "../img/ficon8.png"
 import fimg from "../img/fimg.jpg"
-import fimg1 from "../img/fimg1.jpg"
 import check from "../img/checkmark.png"
 const Features = () => {
   return (
@@ -58,12 +62,27 @@ const Features = () => {
       </div>
       <div className="container-fluid banner3">
 <div className="container">
-  <div className="row">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div className="attach1">
+    <div className='text-center'>
+     <img src={ficon4} alt="" />
+    <p><span >1050+</span><br/>Projects Completed</p>
+    </div>
+    <div className='text-center'>
+      <img src={ficon5} alt="" />
+      <p ><span >217k</span><br/>Happy Clients</p>
+    </div>
+    <div className='text-center'>
+      <img src={ficon6} alt="" />
+      <p ><span >1210</span><br/>Design Awards</p>
+    </div>
+    <div className='text-center'>
+      <img src={ficon7} alt="" />
+      <p ><span >1210</span><br/>Design Awards</p>
+    </div>
+    <div className='text-center'>
+      <img src={ficon8} alt="" />
+      <p ><span >24/7</span><br/>Fast Support</p>
+    </div>
   </div>
   
   </div>
