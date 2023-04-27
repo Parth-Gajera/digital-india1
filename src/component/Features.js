@@ -11,6 +11,7 @@ import ficon7 from "../img/ficon7.png"
 import ficon8 from "../img/ficon8.png"
 import fimg from "../img/fimg.jpg"
 import check from "../img/checkmark.png"
+
 const Features = () => {
   return (
     <div className="features" id="Features">
@@ -19,9 +20,9 @@ const Features = () => {
         <div className="deco">
           <span className="star"><img src={star} alt="" width="100%" /></span>
         </div>
-        <p className='text-center' style={{ opacity: '.5' }}>There are many variations of passages of Lorem Ipsum available, but the majority<br />
+        <p className='text-center' style={{ opacity: '.5', marginBottom: '20px' }}>There are many variations of passages of Lorem Ipsum available, but the majority<br />
           have suffered alteration, by injected humour, or new randomised words.</p>
-        <div className="row">
+        <div className="row r3">
           <div className="col-md-4 text-center">
             <p className="ficon"><img src={ficon1} alt="" width="100%" /></p>
             <h3 className='head21'>Fully Customizable</h3>
@@ -61,32 +62,32 @@ const Features = () => {
         </div>
       </div>
       <div className="container-fluid banner3">
-<div className="container">
-  <div className="attach1">
-    <div className='text-center'>
-     <img src={ficon4} alt="" />
-    <p><span >1050+</span><br/>Projects Completed</p>
-    </div>
-    <div className='text-center'>
-      <img src={ficon5} alt="" />
-      <p ><span >217k</span><br/>Happy Clients</p>
-    </div>
-    <div className='text-center'>
-      <img src={ficon6} alt="" />
-      <p ><span >1210</span><br/>Design Awards</p>
-    </div>
-    <div className='text-center'>
-      <img src={ficon7} alt="" />
-      <p ><span >1210</span><br/>Design Awards</p>
-    </div>
-    <div className='text-center'>
-      <img src={ficon8} alt="" />
-      <p ><span >24/7</span><br/>Fast Support</p>
-    </div>
-  </div>
-  
-  </div>
-  </div>
+        <div className="container">
+          <div className="attach1">
+            <div className='text-center'>
+              <img src={ficon4} alt="" />
+              <p><span className='fun-facts'>1050+</span ><br />Projects Completed</p>
+            </div>
+            <div className='text-center'>
+              <img src={ficon5} alt="" />
+              <p ><span className='fun-facts '>217k</span><br />Happy Clients</p>
+            </div>
+            <div className='text-center'>
+              <img src={ficon6} alt="" />
+              <p ><span className='fun-facts '>1210</span><br />Design Awards</p>
+            </div>
+            <div className='text-center'>
+              <img src={ficon7} alt="" />
+              <p ><span className='fun-facts '>1210</span><br />Design Awards</p>
+            </div>
+            <div className='text-center'>
+              <img src={ficon8} alt="" />
+              <p ><span className='fun-facts'>24/7</span><br />Fast Support</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
   )

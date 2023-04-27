@@ -11,8 +11,12 @@ import partner5 from '../img/partner5.png'
 
 import Nav from '../component/Nav'
 import Features from './Features'
-import Team from './Team'
 import Portfolio from './Portfolio'
+import Register from './Register'
+import Team from './Team'
+import Services from './Services'
+// import Navbar from './Navbar'
+
 
 
 
@@ -22,12 +26,13 @@ const Home = () => {
 
         <div>
             <Nav />
+           {/* <Navbar/> */}
 
             <div className="hero-image container-fluid " id="Home">
                 <div className="container">
                     <div className="row r1">
                         <div className="col-md-6">
-                            <h1>Ready To Promote Your New <br /> Business With DigIndia </h1>
+                            <h1 className='mainhead'>Ready To Promote Your New <br /> Business With DigIndia </h1>
                             <ul className='htext'>
 
                                 <li className='hero-text'>
@@ -53,7 +58,7 @@ const Home = () => {
             <div className="container-fluid r2">
                 <div className="container">
                     <div className="sponsors">
-                       
+
                         <span className="partner"><img src={partner2} width='100%' alt="" /></span>
                         <span className="partner"><img src={partner1} width='100%' alt="" /></span>
                         <span className="partner"><img src={partner3} width='100%' alt="" /></span>
@@ -64,9 +69,11 @@ const Home = () => {
             </div>
 
 
-<Features/>
-<Team/>
-<Portfolio/>
+            <Features />
+            <Portfolio />
+            <Register/>
+            <Team/>
+            <Services/>
 
         </div>
     )
