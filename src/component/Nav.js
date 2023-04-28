@@ -103,16 +103,6 @@ const Nav = () => {
                         </li>
                         <li className="nav-item">
                         <HashLink
-                                to="#Blog"
-                                onClick={() => handleLinkClick('Blog')}
-                                className={activeLink === 'Blog' ? 'active' : 'notactive'}
-                            >
-                               Blog
-                            </HashLink>
-                            
-                        </li>
-                        <li className="nav-item">
-                        <HashLink
                                 to="#Services"
                                 onClick={() => handleLinkClick('Services')}
                                 className={activeLink === 'Services' ? 'active' : 'notactive'}
@@ -120,6 +110,16 @@ const Nav = () => {
                                Services
                             </HashLink>
                            
+                        </li>
+                        <li className="nav-item">
+                        <HashLink
+                                to="#Blog"
+                                onClick={() => handleLinkClick('Blog')}
+                                className={activeLink === 'Blog' ? 'active' : 'notactive'}
+                            >
+                               Blog
+                            </HashLink>
+                            
                         </li>
                         <li className="nav-item">
                         <HashLink

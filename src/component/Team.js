@@ -16,7 +16,7 @@ const Team = () => {
       <div className="deco">
         <span className="star"><img src={star} alt="" width="100%" /></span>
       </div>
-      <p className='text-center' style={{ opacity: '.5',marginBottom:'50px'}}>There are many variations of passages of Lorem Ipsum available, but the majority<br />
+      <p className='text-center' style={{ opacity: '.5', marginBottom: '50px' }}>There are many variations of passages of Lorem Ipsum available, but the majority<br />
         have suffered alteration, by injected humour, or new randomised words.</p>
 
 
@@ -50,21 +50,21 @@ const Team = () => {
           <div className="carousel-item">
             <div className="row">
               <div className="col-md-4">
-              <img src={team4} className="d-block w-100" alt="..." />
+                <img src={team4} className="d-block w-100" alt="..." />
                 <div className="team-box">
                   <h3>CHRISTINA HAWKINS</h3>
                   <p className="team-info">Graphic Designer</p>
                 </div>
               </div>
               <div className="col-md-4">
-              <img src={team5} className="d-block w-100" alt="..." />
+                <img src={team5} className="d-block w-100" alt="..." />
                 <div className="team-box">
                   <h3>RICHARD JOHANSON</h3>
                   <p className="team-info">SEO Specialist</p>
                 </div>
               </div>
               <div className="col-md-4">
-              <img src={team6} className="d-block w-100" alt="..." />
+                <img src={team6} className="d-block w-100" alt="..." />
                 <div className="team-box">
                   <h3>ALEXANDRA SMITHS</h3>
                   <p className="team-info">Graphic Designer</p>

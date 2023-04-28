@@ -15,6 +15,8 @@ import Portfolio from './Portfolio'
 import Register from './Register'
 import Team from './Team'
 import Services from './Services'
+import Blog from './Blog'
+import Pricing from './Pricing'
 // import Navbar from './Navbar'
 
 
@@ -74,6 +76,8 @@ const Home = () => {
             <Register/>
             <Team/>
             <Services/>
+            <Blog/>
+            <Pricing/>
 
         </div>
     )

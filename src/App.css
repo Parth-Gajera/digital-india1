@@ -25,6 +25,12 @@ h6 {
 }
 
 /* This is a Nav css */
+#Nav {
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+}
+
 .brand {
   color: #454545;
   font-size: 28px;
@@ -54,6 +60,7 @@ a.active {
   font-weight: 700 !important;
   color: #34b1c4 !important;
   padding: 15px;
+  margin-bottom: 20px;
   /* transition: all 0.5s ease; */
 }
 
@@ -236,7 +243,7 @@ span.star {
   padding: 90px 0;
 }
 
-.r3{
+.r3 {
   padding-bottom: 90px;
 }
 
@@ -288,6 +295,7 @@ span.star {
   padding: 100px 0 100px 0;
   position: relative;
 }
+
 .fun-facts {
   font-size: 40px;
   font-weight: 600;
@@ -369,7 +377,8 @@ span.star {
   margin: 10px;
   cursor: pointer;
 }
-.image-container:hover{
+
+.image-container:hover {
   opacity: .8;
 }
 
@@ -455,20 +464,25 @@ span.star {
 .register-image {
   display: inline-block;
 }
+
 .c41 {
   padding: 0px;
 }
+
 .c42 {
   background-color: #34b1c4;
 }
+
 .register-content {
   padding: 50px 0 50px 35px;
   width: 100%;
   max-width: 585px;
 }
-.form{
+
+.form {
   padding: 25px 0 20px 0
 }
+
 .register-input {
   width: 100%;
   height: 52px;
@@ -481,9 +495,12 @@ span.star {
   font-size: 14px;
   border-radius: 5px 5px 5px 5px;
 }
- ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color:white;
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
 }
+
 .register-submit {
   color: #34b1c4;
   border: 1px solid #fff;
@@ -499,15 +516,17 @@ span.star {
   border-radius: 3px 3px;
   transition: all 1s ease-in-out;
 }
-.register-submit:hover{
+
+.register-submit:hover {
   color: #fff;
   background-color: #34b1c4;
 }
 
 /* This is a Team css */
-.team{
+.team {
   padding: 90px 0px;
 }
+
 .team-box {
   text-align: center;
   background-color: #eef0f1;
@@ -518,14 +537,16 @@ span.star {
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
+
 .team-box p.team-info {
   font-size: 16px;
   font-style: italic;
   margin-bottom: 5px;
   color: #858585;
 }
+
 .team-box h3 {
-  margin: 20px 0 1px 0!important;
+  margin: 20px 0 1px 0 !important;
   color: #454545;
   font-size: 18px;
   text-transform: uppercase;
@@ -533,54 +554,195 @@ span.star {
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
 }
-.team-box h3:hover{
+
+.team-box h3:hover {
   color: #34b1c4;
 }
-.carousel-indicators{
+
+.carousel-indicators {
   position: inherit;
 }
 
 /* This is a Services css */
-.services{
-  padding: 90px 0px 60px 0px;
+.services {
+  padding: 90px 0px 0px 0px;
   background-color: #eef0f1;
 }
+
 span.services1 {
   display: block;
   margin: 0 auto;
   max-width: 1140px;
   margin: 20px 0px 40px 0px;
 }
-.scol{
+
+.scol {
   position: relative;
   margin-top: 20px;
 }
-.sicon{
-position: absolute;
-width: 48px;
+
+.sicon {
+  position: absolute;
+  width: 48px;
 }
-.stext{
+
+.stext {
   padding-left: 60px;
 }
-.r62{
+
+.r62 {
   padding: 60px 0px;
 }
-.scol2{
+
+.scol2 {
   margin: 50px 0px 30px 0px;
 }
-.sbtn{
+
+.sbtn {
   padding: 16px 28px;
-    background-color: #34b1c4;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 1px;
-    border-radius: 6px;
+  background-color: #34b1c4;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 6px;
 }
-.sbtn:hover{
+
+.sbtn:hover {
   background-color: #337ab7;
   color: white;
   transition: all 0.25s ease-in-out;
+}
+
+.banner4 {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(E:/Parth/digital-india/src/img/services2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 90px 0 90px 0;
+  position: relative;
+}
+
+.bant4 {
+  text-align: center;
+  color: white;
+}
+
+/* This is a Blog css  */
+.blog {
+  padding: 90px 0px;
+}
+
+.blog-title {
+  margin-top: 15px;
+}
+
+h5.blog-title a {
+
+  font-size: 21px;
+  color: #454545;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
+h5.blog-title a:hover {
+  color: #228798;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
+.blog-icon {
+  font-size: 14px;
+  color: #454545;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
+.blog-icon:hover {
+  color: #228798;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+.bbtn {
+  padding: 8px 16px;
+  background-color: #34b1c4;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  border: 2px solid  #34b1c4 ;
+}
+
+.bbtn:hover {
+  background-color: #fff;
+  color: #34b1c4;
+  border: 2px solid  #34b1c4 ;
+  transition: all 0.25s ease-in-out;
+}
+.blog-bg{
+  background-color: #34b1c4;
+}
+.banner5 {
+    padding: 90px 0px;
+ 
+}
+.blog-text{
+  color: white;
+}
+.blog-img{
+  /* width: 555px; */
+}
+.bbtn2 {
+  padding: 12px 24px;
+  background-color: #fff;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: #808080;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  border: 2px solid   #fff ;
+}
+
+.bbtn2:hover {
+  background-color: #34b1c4;
+  color: #fff;
+  border: 2px solid  #fff ;
+  transition: all 0.25s ease-in-out;
+}
+
+/* This is a Pricing css */
+.pricing-box {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+.pricing-box .pricing-top {
+  background-color: #34b1c4;
+  padding: 20px 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+.pricing-bottom {
+  padding: 0 35px 40px 35px;
 }

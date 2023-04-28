@@ -8,6 +8,11 @@ import sicon3 from "../img/sicon3.png"
 import sicon4 from "../img/sicon4.png"
 import sicon5 from "../img/sicon5.png"
 import sicon6 from "../img/sicon6.png"
+import partner1 from '../img/partner1.png'
+import partner2 from '../img/partner2.png'
+import partner3 from '../img/partner3.png'
+import partner4 from '../img/partner4.png'
+import partner5 from '../img/partner5.png'
 
 const Services = () => {
     return (
@@ -67,12 +72,12 @@ const Services = () => {
                 </div>
                 <div className="row r62">
                     <div className="col-md-6 scol1">
-                        <iframe src="https://player.vimeo.com/video/69988283?h=374ede24b7" width='100%'  height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/69988283?h=374ede24b7" width='100%' height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div className="col-md-6 scol2">
 
 
-                        <h3 class="medium-title">Watch the video presentation.</h3>
+                        <h3 className="medium-title">Watch the video presentation.</h3>
 
                         <p className='text-secondary'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui ipsum quiaim netsum. Consequuntur sequimagni.</p>
 
@@ -82,9 +87,29 @@ const Services = () => {
 
                     </div>
                 </div>
-
-
             </div>
+            <div className="banner4">
+                <div className="container bant4">
+                    <h2 className='text-light'>Seen enough? Let's get started.</h2>
+                    <p >No Fixed Contract. No Installation Required. Trusted &amp; Secure.</p>
+                    <a href="#Pricing" className='sbtn'>TRY IT FOR FREE!</a>
+                </div>
+            </div>
+            <div className="container-fluid r2">
+                <div className="container">
+                    <div className="sponsors">
+
+                        <span className="partner"><img src={partner2} width='100%' alt="" /></span>
+                        <span className="partner"><img src={partner1} width='100%' alt="" /></span>
+                        <span className="partner"><img src={partner3} width='100%' alt="" /></span>
+                        <span className="partner"><img src={partner4} width='100%' alt="" /></span>
+                        <span className="partner"><img src={partner5} width='100%' alt="" /></span>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     )
 }

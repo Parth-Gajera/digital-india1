@@ -28,7 +28,7 @@ function App() {
       <nav>
         <ul>
           <li className={activeSection === 0 ? "active" : ""}>
-            <a href="#section1">Section 1</a>
+            <a href="#section1" data-scrl="ooo" >Section 1</a>
           </li>
           <li className={activeSection === 1 ? "active" : ""}>
             <a href="#section2">Section 2</a>
