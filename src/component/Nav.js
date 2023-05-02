@@ -15,25 +15,25 @@ const Nav = () => {
     const [activeSection, setActiveSection] = useState(null);
 
     useEffect(() => {
-      const handleScroll = () => {
-        const sections = document.querySelectorAll("section");
-        const scrollPosition = window.pageYOffset;
-  
-        sections.forEach((section, index) => {
-          const top = section.offsetTop;
-          const height = section.offsetHeight; 
-  
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(index);
-          }
-        });
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      return () => window.removeEventListener("scroll", handleScroll);
+        const handleScroll = () => {
+            const sections = document.querySelectorAll("section");
+            const scrollPosition = window.pageYOffset;
+
+            sections.forEach((section, index) => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+
+                if (scrollPosition >= top && scrollPosition < top + height) {
+                    setActiveSection(index);
+                }
+            });
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-  
+
 
 
     return (
@@ -53,7 +53,7 @@ const Nav = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
 
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 tabs">
-                    <li className={activeSection === 0 ? "active" : ""}>
+                        <li className={activeSection === 0 ? "active" : ""}>
                             <HashLink
                                 to="#Home"
                                 onClick={() => handleLinkClick('Home')}
@@ -82,47 +82,47 @@ const Nav = () => {
                             </HashLink>
                         </li>
                         <li className={activeSection === 3 ? "active" : ""}>
-                        <HashLink
+                            <HashLink
                                 to="#Register"
                                 onClick={() => handleLinkClick('Register')}
                                 className={activeLink === 'Register' ? 'active' : 'notactive'}
                             >
                                 Register
                             </HashLink>
-                          
+
                         </li>
                         <li className="nav-item">
-                        <HashLink
+                            <HashLink
                                 to="#Team"
                                 onClick={() => handleLinkClick('Team')}
                                 className={activeLink === 'Team' ? 'active' : 'notactive'}
                             >
-                               Team
+                                Team
                             </HashLink>
-                           
+
                         </li>
                         <li className="nav-item">
-                        <HashLink
+                            <HashLink
                                 to="#Services"
                                 onClick={() => handleLinkClick('Services')}
                                 className={activeLink === 'Services' ? 'active' : 'notactive'}
                             >
-                               Services
+                                Services
                             </HashLink>
-                           
+
                         </li>
                         <li className="nav-item">
-                        <HashLink
+                            <HashLink
                                 to="#Blog"
                                 onClick={() => handleLinkClick('Blog')}
                                 className={activeLink === 'Blog' ? 'active' : 'notactive'}
                             >
-                               Blog
+                                Blog
                             </HashLink>
-                            
+
                         </li>
                         <li className="nav-item">
-                        <HashLink
+                            <HashLink
                                 to="#Pricing"
                                 onClick={() => handleLinkClick('Pricing')}
                                 className={activeLink === 'Pricing' ? 'active' : 'notactive'}
@@ -131,10 +131,17 @@ const Nav = () => {
                             </HashLink>
                             {/* <HashLink className="nav-link" to='#Pricing'>Pricing</HashLink> */}
                         </li>
-                        <li className="nav-item">
-                            <button className="nav-link btn1">Contact us</button>
+                        <li className="nav-item" style={{display:'flex'}}>
+                            <HashLink
+                                to="#Contact"
+                                id="btn1"
+                                onClick={() => handleLinkClick('Contact')}
+                                className={activeLink === 'Contact' ? 'active' : ''}
+                            >Contact us
+                            </HashLink>
                         </li>
                     </ul>
+
                 </div>
 
 

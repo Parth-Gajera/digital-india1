@@ -20,7 +20,7 @@ const Pricing = () => {
                         <div className="pricing-box">
                             <div className="pricing-top">
                                 <h3>Starter</h3>
-                                <p className="price"><span className="">$</span> <span className="">99</span> <span className="">p/month</span></p>
+                                <p className="price"><span className="currency white">$</span> <span className="number white">99</span> <span className="month white">p/month</span></p>
                             </div>
                             <div className="pricing-bottom">
                                 <ul>
@@ -40,7 +40,7 @@ const Pricing = () => {
                         <div className="pricing-box">
                             <div className="pricing-top">
                                 <h3>Advanced</h3>
-                                <p className="price"><span className="">$</span> <span className="">199</span> <span className="">p/month</span></p>
+                                <p className="price"><span className="currency white">$</span> <span className="number white">199</span> <span className="month white">p/month</span></p>
                             </div>
                             <div className="pricing-bottom">
                                 <ul>
@@ -50,7 +50,7 @@ const Pricing = () => {
                                     <li>1 user acounts</li>
                                     <li>2 databases</li>
                                 </ul>
-                                <a href="#Home" className="pbtn">REGISTER TODAY</a>
+                                <a href="#Home" className="pbtn2">REGISTER TODAY</a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const Pricing = () => {
                         <div className="pricing-box">
                             <div className="pricing-top">
                                 <h3>Intermediate</h3>
-                                <p className="price"><span className="">$</span> <span className="">299</span> <span className="">p/month</span></p>
+                                <p className="price"><span className="currency white">$</span> <span className="number white">299</span> <span className="month white">p/month</span></p>
                             </div>
                             <div className="pricing-bottom">
                                 <ul>
@@ -79,9 +79,14 @@ const Pricing = () => {
 
                 </div>
 
-            </div>
+                <div className="text-center">
+                    <p className='condition2'>*With more than <b>25078 clients</b>, we aim to offer premium <b>marketing solutions</b> for your business.</p>
+                </div>
+                
+            </div>  
         </div>
     )
 }
+
 
 export default Pricing

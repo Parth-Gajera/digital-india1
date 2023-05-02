@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 // import './lightbox.css';
+import {FiMove} from 'react-icons/fi';
 
 const Lightbox = ({ images }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,12 +31,15 @@ const Lightbox = ({ images }) => {
       <div className="lightbox">
         {images?.map((image, index) => (
           <div key={index} className="image-container">
+        <a href='#Home' className='port'>
             <img 
               src={image.src}
               alt={image.alt}
               onClick={() => openLightbox(index)}
-              className='port'
+            width="100%"
             />
+            </a>
+            <span class="eye-wrapper"><FiMove/></span>
           </div>
         ))}
       </div>

@@ -17,6 +17,7 @@ import Team from './Team'
 import Services from './Services'
 import Blog from './Blog'
 import Pricing from './Pricing'
+import Contact from './Contact'
 // import Navbar from './Navbar'
 
 
@@ -66,6 +67,7 @@ const Home = () => {
                         <span className="partner"><img src={partner3} width='100%' alt="" /></span>
                         <span className="partner"><img src={partner4} width='100%' alt="" /></span>
                         <span className="partner"><img src={partner5} width='100%' alt="" /></span>
+                        
                     </div>
                 </div>
             </div>
@@ -78,6 +80,7 @@ const Home = () => {
             <Services/>
             <Blog/>
             <Pricing/>
+            <Contact/>
 
         </div>
     )
