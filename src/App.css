@@ -1,6 +1,13 @@
 * {
   font-family: 'Roboto', sans-serif;
+ 
 }
+:root{
+  --prime-color:#34b1c4;
+  --white-color:#fff;
+  --darkgrey-color:#454545;
+  --grey-color:#858585;
+}       
 
 li {
   list-style: none;
@@ -20,122 +27,126 @@ h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: #454545;
+  color: var(--darkgrey-color);
 
 }
 
-/* This is a Nav css */
+/*=> This is a Nav css */
 #Nav {
   position: fixed;
   z-index: 10;
-  background-color: #fff;
+  background-color:var(--white-color);
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0px;
+}
 .brand {
-  color: #454545;
+  color: var(--darkgrey-color);
   font-size: 28px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   line-height: 20px;
   cursor: pointer;
 }
-
 .blue {
   color: #3498db;
 }
-
-a.notactive {
+.navbar-collapse {
+  flex-grow: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav li a{
   font-size: 14px;
   line-height: 45px;
   text-transform: uppercase;
   font-weight: 700 !important;
-  color: #454545 !important;
+  color: var(--darkgrey-color) ;
   padding: 15px;
 }
-
-a.active {
+nav li a:hover{
   font-size: 14px;
   line-height: 45px;
   text-transform: uppercase;
   font-weight: 700 !important;
-  color: #34b1c4;
+  color:var(--prime-color);
+  padding: 15px;
+}
+nav li.active a{
+  font-size: 14px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  color:var(--prime-color);
   padding: 15px;
   margin-bottom: 20px;
   /* transition: all 0.5s ease; */
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-.navbar-collapse {
-  flex-grow: 0;
-}
-
-#btn1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
+ #btn1 {
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white-color) !important ;
   font-size: 14px;
-  background-color: #34b1c4;
-  border: 2px solid #34b1c4;
+  background-color: var(--prime-color);
+  border: 2px solid var(--prime-color);
   border-radius: 5px;
   padding: 0px 15px;
 }
 
 #btn1:hover {
-  background-color: #fff;
-  color: #34b1c4;
+  background-color: var(--white-color);
+  color: var(--prime-color);
 }
-
-#btn1.active {
-  background-color: #34b1c4;
-  color: #fff;
-  border: 2px solid #34b1c4;
-  
+#btn1 .active {
+  background-color: var(--prime-color);
+  border: 2px solid var(--prime-color);
+  padding: 0px;
   line-height: 45px;
   font-weight: 700 !important;
   margin-bottom: 0px;
+}   
 
-}
 
 /*=> This is a Home css */
 #Home{
-  padding-top: 60px;
+  padding-top: 45px;
 }
 .hero-image {
   background-image: url("E:/Parth/digital-india/src/img/hero.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
+  background-position: center top;
   height: 100vh;
   position: relative;
-  /* width: 100%; */
-  /* max-width: 1500px; */
 }
-
 .r1 {
   height: 100vh;
   display: flex;
   flex-direction: row;
   align-content: center;
-  color: #fff;
-}
+  color:var(--white-color);
 
+}
 .mainhead {
-  color: #fff;
+  color: var(--white-color);
   visibility: visible;
   animation: parth 3s;
   /* animation-delay: 5s; */
   animation-timing-function: ease-in;
 }
-
 @keyframes parth {
   from {
     opacity: 0;
@@ -145,43 +156,34 @@ a.active {
     opacity: 1;
   }
 }
-
 .hero-text {
   display: flex;
 
 }
-
 .htext {
   padding-left: 0px !important;
 }
-
 .hicon {
   display: inline-block;
   width: 64px;
   margin-right: 20px;
 }
-
 .text {
   opacity: 0.5;
 }
-
 span.partner {
   display: inline-block;
   width: 140px;
   opacity: .5;
 }
-
 span.partner:hover {
   opacity: 1;
 }
-
-
 .r2 {
   padding: 50px 0px;
-  background-color: #eef0f1;
+  background-color: var(--white-color);
   background: cover;
 }
-
 .sponsors {
 
   display: flex;
@@ -194,13 +196,14 @@ span.partner:hover {
 
 
 /*=> This is a Features css */
-.features {
+#Features {
   padding-top: 90px;
+  height: 83rem;
 }
 
 h2.head2 {
   text-align: center;
-  color: #454545;
+  color: var(--darkgrey-color);
   margin-bottom: 15px;
   font-weight: 700;
   line-height: 1.2;
@@ -214,15 +217,13 @@ h2.head2 {
 .deco::after,
 .deco::before {
 
-  background-color: #34b1c4;
+  background-color:var(--prime-color);
   display: inline-block;
   vertical-align: middle;
   content: "";
   width: 60px;
   height: 1px;
   margin: 0px 5px;
-  /* margin-top: -6px; */
-
 }
 
 span.star {
@@ -237,8 +238,8 @@ span.star {
   line-height: 42px;
   display: inline-block;
   text-align: center;
-  color: #fff;
-  background-color: #34b1c4;
+  color: var(--white-color);
+  background-color: var(--prime-color);
   -webkit-border-radius: 8px 8px;
   -moz-border-radius: 8px 8px;
   border-radius: 8px 8px;
@@ -247,23 +248,22 @@ span.star {
   -webkit-transition: all .50s ease-in-out;
 
 }
-
 .ftext {
   padding: 0 10px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: #858585;
+  color: var(--grey-color);
   margin-bottom: 15px;
 }
 
 .banner2 {
-  background-color: #eef0f1;
-  padding: 90px 0;
+  background-color:var(--white-color);
+  /* padding: 90px 0; */
 }
 
 .r3 {
-  padding-bottom: 90px;
+  /* padding-bottom: 90px; */
 }
 
 .c2 {
@@ -274,7 +274,6 @@ span.star {
   display: inline-block;
   padding-left: 0px;
 }
-
 .check {
 
   float: left;
@@ -283,15 +282,14 @@ span.star {
   margin: 1px 0;
 
 }
-
 .fbtn {
   padding: 16px 28px;
-  background-color: #34b1c4;
+  background-color: var(--prime-color);
   list-style: none;
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  color: #fff;
+  color: var(--white-color);
   font-weight: 700;
   letter-spacing: 1px;
   transition: all 0.25s ease-in-out;
@@ -299,40 +297,36 @@ span.star {
   white-space: nowrap;
   vertical-align: middle;
 }
-
 .fbtn:hover {
-  color: #fff;
+  color: var(--white-color);
   background-color: #337ab7;
 }
-
 .banner3 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(E:/Parth/digital-india/src/img/fimg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* height: 100vh; */
   padding: 100px 0 100px 0;
   position: relative;
 }
-
 .fun-facts {
   font-size: 40px;
   font-weight: 600;
-  color: #fff;
+  color: var(--white-color);
   font-style: italic;
 }
-
 .attach1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  color: #fff;
+  color: var(--white-color);
 }
 
 /*=> This is a my portfolio css */
 .portfolio {
   padding: 90px 0px;
+  height: 53rem;
 }
 
 .lightbox {
@@ -350,7 +344,7 @@ span.star {
 }
 .port img {
   position: relative;
-  z-index: 10;
+
   width: 100%;
   height: auto;
 }
@@ -366,26 +360,18 @@ span.star {
   position: absolute;
   display: block;
   overflow: hidden;
-  z-index: 2;
+ 
   height: 100% !important;
   top: 0%;
   margin-top: 0px;
   left: 0%;
   right: 0%;
   font-size: 22px;
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   font-weight: 300;
   opacity: 0;
 }
-
-/* .image-container:hover {
-  
-} */
-
-
-
-
 
 /* This is a lightbox css */
 
@@ -394,13 +380,12 @@ span.star {
   align-items: center;
   justify-content: center;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: #000000e6;
-  z-index: 11;
+  
 }
 
 .modal-content {
@@ -416,7 +401,7 @@ span.star {
   right: 20px;
   font-size: 40px;
   font-weight: bold;
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -461,8 +446,9 @@ span.star {
 }
 
 /* This is a Register css */
-.register{
-  padding-top: 62px;
+#Register{
+  padding-top: 60px;
+  height: 37rem;
 }
 .register-image {
   display: inline-block;
@@ -473,7 +459,7 @@ span.star {
 }
 
 .c42 {
-  background-color: #34b1c4;
+  background-color: var(--prime-color);
 }
 
 .register-content {
@@ -493,27 +479,27 @@ span.star {
   padding-left: 2%;
   padding-right: 2%;
   margin-bottom: 20px;
-  color: #fff;
-  border: 1px solid #fff;
+  color:var(--white-color);
+  border: 1px solid var(--white-color);
   background-color: transparent;
   font-size: 14px;
   border-radius: 5px 5px 5px 5px;
 }
 
 option {
-  background-color: #fff;
-  color: #34b0c4;
+  background-color: var(--white-color);
+  color: var(--prime-color);
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: var(--white-color);
 }
 
 .register-submit {
-  color: #34b1c4;
-  border: 1px solid #fff;
-  background-color: #fff;
+  color: var(--prime-color);
+  border: 1px solid var(--white-color);
+  background-color: var(--white-color);
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -527,19 +513,19 @@ option {
 }
 
 .register-submit:hover {
-  color: #fff;
-  background-color: #34b1c4;
+  color: var(--white-color);
+  background-color: var(--prime-color);
 }
 
 /* This is a Team css */
-.team {
-  padding: 90px 0px;
+#Team {
+  padding-top: 90px;
 }
 
 .team-box {
   text-align: center;
-  background-color: #eef0f1;
-  border-bottom: 3px solid #e0e0e0;
+  background-color: var(--white-color);
+  border-bottom: 3px solid var(--white-color);
   margin-bottom: 20px;
   padding: 1px 20px 15px 20px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -551,12 +537,12 @@ option {
   font-size: 16px;
   font-style: italic;
   margin-bottom: 5px;
-  color: #858585;
+  color: var(--grey-color);
 }
 
 .team-box h3 {
   margin: 20px 0 1px 0 !important;
-  color: #454545;
+  color: var(--darkgrey-color);
   font-size: 18px;
   text-transform: uppercase;
   transition: all .25s ease-in-out;
@@ -565,7 +551,7 @@ option {
 }
 
 .team-box h3:hover {
-  color: #34b1c4;
+  color: var(--prime-color);
 }
 
 .carousel-indicators {
@@ -573,9 +559,9 @@ option {
 }
 
 /* This is a Services css */
-.services {
+#Services {
   padding: 90px 0px 0px 0px;
-  background-color: #eef0f1;
+  background-color: var(--white-color);
 }
 
 span.services1 {
@@ -609,11 +595,11 @@ span.services1 {
 
 .sbtn {
   padding: 16px 28px;
-  background-color: #34b1c4;
+  background-color: var(--prime-color);
   position: relative;
   display: inline-block;
   text-align: center;
-  color: #fff;
+  color: var(--white-color);
   font-weight: 700;
   letter-spacing: 1px;
   border-radius: 6px;
@@ -621,7 +607,7 @@ span.services1 {
 
 .sbtn:hover {
   background-color: #337ab7;
-  color: white;
+  color: var(--white-color);
   transition: all 0.25s ease-in-out;
 }
 
@@ -637,11 +623,11 @@ span.services1 {
 
 .bant4 {
   text-align: center;
-  color: white;
+  color: var(--white-color);
 }
 
 /* This is a Blog css  */
-.blog {
+#Blog {
   padding-top: 90px;
 }
 
@@ -652,7 +638,7 @@ span.services1 {
 h5.blog-title a {
 
   font-size: 21px;
-  color: #454545;
+  color: var(--darkgrey-color);
   transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
@@ -667,7 +653,7 @@ h5.blog-title a:hover {
 
 .blog-icon {
   font-size: 14px;
-  color: #454545;
+  color: var(--darkgrey-color);
   transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
@@ -682,26 +668,26 @@ h5.blog-title a:hover {
 
 .bbtn {
   padding: 8px 16px;
-  background-color: #34b1c4;
+  background-color: var(--prime-color);
   position: relative;
   display: inline-block;
   text-align: center;
-  color: #fff;
+  color: var(--white-color);
   font-weight: 700;
   letter-spacing: 1px;
   border-radius: 6px;
-  border: 2px solid #34b1c4;
+  border: 2px solid var(--prime-color);
 }
 
 .bbtn:hover {
-  background-color: #fff;
-  color: #34b1c4;
-  border: 2px solid #34b1c4;
+  background-color: var(--white-color);
+  color: var(--prime-color);
+  border: 2px solid var(--prime-color);
   transition: all 0.25s ease-in-out;
 }
 
 .blog-bg {
-  background-color: #34b1c4;
+  background-color: var(--prime-color);
 }
 
 .banner5 {
@@ -710,33 +696,34 @@ h5.blog-title a:hover {
 }
 
 .blog-text {
-  color: white;
+  color: var(--white-color);
 }
 
 
 .bbtn2 {
   padding: 12px 24px;
-  background-color: #fff;
+  background-color:var(--white-color);
   position: relative;
   display: inline-block;
   text-align: center;
-  color: #808080;
+  color: var(--grey-color);
   font-weight: 700;
   letter-spacing: 1px;
   border-radius: 6px;
-  border: 2px solid #fff;
+  border: 2px solid var(--white-color);
 }
 
 .bbtn2:hover {
-  background-color: #34b1c4;
-  color: #fff;
-  border: 2px solid #fff;
+  background-color: var(--prime-color);
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
   transition: all 0.25s ease-in-out;
 }
 
 /* This is a Pricing css */
-.pricing {
+#Pricing {
   padding-top: 90px;
+  
 }
 
 .pricing-box {
@@ -746,15 +733,15 @@ h5.blog-title a:hover {
   -webkit-border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
-  background-color: #f9f9f9;
+  background-color: var(--white-color);
   text-align: center;
-  border-left: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
-  border-bottom: 2px solid #e5e5e5;
+  border-left: 1px solid var(--white-color);
+  border-right: 1px solid var(--white-color);
+  border-bottom: 2px solid var(--white-color);
 }
 
 .pricing-box .pricing-top {
-  background-color: #34b1c4;
+  background-color: var(--prime-color);
   padding: 20px 0;
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -762,7 +749,7 @@ h5.blog-title a:hover {
 }
 
 .pricing-top h3 {
-  color: #fff;
+  color: var(--white-color);
   font-size: 22px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -773,7 +760,7 @@ h5.blog-title a:hover {
 }
 
 .pricing-top .price .currency {
-  color: #fff;
+  color: var(--white-color);
   font-size: 24px;
   line-height: 40px;
   font-weight: 600;
@@ -782,14 +769,14 @@ h5.blog-title a:hover {
 }
 
 .pricing-top .price span.number {
-  color: #fff;
+  color:var(--white-color);
   font-size: 36px;
   line-height: 42px;
   font-weight: 700;
 }
 
 .pricing-top .price .month {
-  color: #fff;
+  color:var(--white-color);
   font-size: 16px;
   line-height: 18px;
   font-weight: 600;
@@ -802,47 +789,47 @@ h5.blog-title a:hover {
 .pricing-bottom ul {
   margin: 35px 0px 40px;
   padding: 0;
-  color: #858585;
+  color: var(--grey-color);
   line-height: 30px;
 }
 
 .pbtn {
   display: block;
   width: 100%;
-  color: #34b1c4;
+  color: var(--prime-color);
   background-color: transparent;
-  border: 2px solid #34b1c4;
+  border: 2px solid var(--prime-color);
   padding: 14px 0;
   font-weight: 600;
   transition: all 0.25s ease-in-out;
 }
 
 .pbtn:hover {
-  color: #fff;
-  background-color: #34b1c4;
-  border: 2px solid #34b1c4;
+  color:var(--white-color);
+  background-color:var(--prime-color);
+  border: 2px solid var(--prime-color);
 }
 
 .pbtn2 {
   display: block;
   width: 100%;
-  color: #fff;
-  background-color: #34b1c4;
-  border: 2px solid #34b1c4;
+  color: var(--white-color);
+  background-color: var(--prime-color);
+  border: 2px solid var(--prime-color);
   padding: 14px 0;
   font-weight: 600;
   transition: all 0.25s ease-in-out;
 }
 
 .pbtn2:hover {
-  color: #34b1c4;
-  background-color: #ffff;
-  border: 2px solid #fff;
-  border: 2px solid #34b1c4;
+  color: var(--prime-color);
+  background-color:var(--white-color);
+  /* border: 2px solid #fff; */
+  border: 2px solid var(--prime-color);
 }
 
 .condition2 {
-  color: #858585;
+  color: var(--grey-color);
 }
 
 /* This is a Contact css */
@@ -863,7 +850,7 @@ input.contact-input {
   padding-left: 2%;
   padding-right: 2%;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--white-color);
   border: 1px solid #757575;
   background-color: transparent;
   font-size: 14px;
@@ -881,7 +868,7 @@ textarea {
   padding-right: 2%;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #fff;
+  color: var(--white-color);
   border: 1px solid #757575;
   background-color: transparent;
   font-size: 14px;
@@ -891,9 +878,9 @@ textarea {
 }
 
 .contact-submit {
-  color: #fff;
-  border: 2px solid #34b1c4;
-  background-color: #34b1c4;
+  color:var(--white-color);
+  border: 2px solid var(--prime-color);
+  background-color: var(--prime-color);
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -912,10 +899,10 @@ textarea {
 }
 
 .contact-submit:hover {
-  color: #34b1c4;
+  color: var(--prime-color);
   background-color: transparent;
   border: 2px solid #fff;
-  border: 2px solid #34b1c4;
+  border: 2px solid var(--prime-color);
 }
 
 
@@ -929,7 +916,7 @@ textarea {
 
 .copyright p {
   margin-top: 20px;
-  color: #fff;
+  color:var(--white-color);
 }
 
 .footer_social {
@@ -950,13 +937,13 @@ a.ibtn {
   border: 2px solid #808080;
   border-radius: 50%;
   display: inline-block;
-  padding: 6px;
+  padding: 2px 4px;
   color: #808080;
 
 }
 
 a.ibtn:hover {
-  background-color: #34b1c4;
-  border: 2px solid #34b1c4;
-  color: #fff;
+  background-color: var(--prime-color);
+  border: 2px solid var(--prime-color);
+  color: var(--white-color);
 }

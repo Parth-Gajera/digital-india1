@@ -4,7 +4,7 @@ import star from "../img/star .png"
 
 const Pricing = () => {
     return (
-        <div className="pricing" id="Pricing">
+        <section className="pricing" id="Pricing">
             <div className="container">
                 <h2 className='head2'>Choose Your Pricing Plan</h2>
                 <div className="deco">
@@ -84,7 +84,7 @@ const Pricing = () => {
                 </div>
                 
             </div>  
-        </div>
+        </section>
     )
 }
 

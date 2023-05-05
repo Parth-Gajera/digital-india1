@@ -4,7 +4,7 @@ import register from '../img/register.jpg'
 
 const Register = () => {
   return (
-    <div className="register" id="Register">
+    <section className="register" id="Register">
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6 c41">
@@ -41,7 +41,7 @@ const Register = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -19,7 +19,7 @@ const images = [
 
 const Portfolio = () => {
   return (
-    <div className="portfolio" id="Portfolio">
+    <section className="portfolio" id="Portfolio">
       <div className="container">
         <h2 className='head2'>Our Latest Work</h2>
         <div className="deco">
@@ -32,7 +32,7 @@ const Portfolio = () => {
         <Lightbox images={images} />
 
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import star from "../img/star .png"
 import ficon1 from "../img/ficon1.png"
 import ficon2 from "../img/ficon2.png"
@@ -14,7 +15,7 @@ import check from "../img/checkmark.png"
 
 const Features = () => {
   return (
-    <div className="features" id="Features">
+    <section className="features" id="Features">
       <div className="container">
         <h2 className='head2'>Amazing Features</h2>
         <div className="deco">
@@ -88,7 +89,7 @@ const Features = () => {
 
         </div>
       </div>
-    </div>
+    </section>
 
   )
 }

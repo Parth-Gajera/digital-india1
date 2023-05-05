@@ -29,9 +29,9 @@ const Lightbox = ({ images }) => {
   return (
     <>
       <div className="lightbox">
-        {images?.map((image, index) => (
+        {images.map((image, index) => (
           <div key={index} className="image-container">
-        <a href='#Home' className='port'>
+        <a href='#Portfolio' className='port'>
             <img 
               src={image.src}
               alt={image.alt}

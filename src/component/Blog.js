@@ -11,7 +11,7 @@ import blogic2 from "../img/blog-icon2.png"
 
 const Blog = () => {
     return (
-        <div className="blog" id="Blog">
+        <section className="blog" id="Blog">
             <div className="container">
 
                 <h2 className='head2'>Our Latest News</h2>
@@ -97,7 +97,7 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
     )
 }

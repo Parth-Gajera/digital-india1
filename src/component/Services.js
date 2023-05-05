@@ -16,7 +16,7 @@ import partner5 from '../img/partner5.png'
 
 const Services = () => {
     return (
-        <div className="services container-fluid" id="Services">
+        <section className="services container-fluid" id="Services">
             <div className="container">
                 <h2 className='head2'>Amazing Services</h2>
                 <div className="deco">
@@ -110,7 +110,7 @@ const Services = () => {
 
 
 
-        </div>
+        </section>
     )
 }
 

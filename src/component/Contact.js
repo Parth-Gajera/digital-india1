@@ -57,7 +57,7 @@ const Contact = () => {
                         <div className="col-md-12 text-center">
 
                             <div className="copyright">
-                            <a className="navbar-brand" href='#Home'><span className='brand' style={{marginBottom:"20px"}}><span className="blue">Dig</span>India</span></a>
+                            <a className="navbar-brand" href='#Home'><span className='brand' style={{marginBottom:"20px",color:'white'}}><span className="blue">Dig</span>India</span></a>
                                 <p>Copyright © 2023. Designed &amp; Developed by <a href="#Home" style={{color:'#34b1c4'}} >Parth Gajera</a></p>
                             </div>
                            

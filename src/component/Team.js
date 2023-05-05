@@ -10,7 +10,7 @@ import team6 from '../img/team6.jpg'
 
 const Team = () => {
   return (
-    <div className="team container" id="Team">
+    <section className="team container" id="Team">
 
       <h2 className='head2'>Meet Our Amazing Team</h2>
       <div className="deco">
@@ -81,7 +81,7 @@ const Team = () => {
 
       </div>
 
-    </div>
+    </section>
   )
 }
 
