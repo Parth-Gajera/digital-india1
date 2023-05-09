@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import './lightbox.css';
-import {FiMove} from 'react-icons/fi';
+import { FiMove } from 'react-icons/fi';
+
 
 const Lightbox = ({ images }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,21 +32,28 @@ const Lightbox = ({ images }) => {
       <div className="lightbox">
         {images.map((image, index) => (
           <div key={index} className="image-container">
-        <a href='#Portfolio' className='port'>
-            <img 
-              src={image.src}
-              alt={image.alt}
-              onClick={() => openLightbox(index)}
-            width="100%"
-            />
-            </a>
-            <span class="eye-wrapper"><FiMove/></span>
+            <a href='#Portfolio' className='port'>
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => openLightbox(index)}
+                width="100%"
+              />
+           </a>
+            <ul className="social-icons">
+              <li>
+                <a href="#Portfolio">
+                 <FiMove/>
+                </a>
+              </li>
+            </ul>
+       
           </div>
         ))}
       </div>
-      {/* <span class="eye-wrapper">
+              {/* <span class="eye-wrapper">
         
-        <i class="icon icon-cursor-move eye-icon" ></i></span> */}
+              <i class="icon icon-cursor-move eye-icon" ></i></span> */}
 
       {isOpen && (
         <div className="modal">

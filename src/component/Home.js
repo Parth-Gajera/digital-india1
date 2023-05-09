@@ -8,8 +8,8 @@ import partner2 from '../img/partner2.png'
 import partner3 from '../img/partner3.png'
 import partner4 from '../img/partner4.png'
 import partner5 from '../img/partner5.png'
-
 import Nav from '../component/Nav'
+// import Navbar from '../component/Navbar'
 import Features from './Features'
 import Portfolio from './Portfolio'
 import Register from './Register'
@@ -18,6 +18,8 @@ import Services from './Services'
 import Blog from './Blog'
 import Pricing from './Pricing'
 import Contact from './Contact'
+
+// import Features1 from './Features1'
 
 
 
@@ -29,6 +31,7 @@ const Home = () => {
 
         <>
             <Nav />
+            {/* <Navbar/> */}
 
             <section id="Home">
                 <div className="hero-image container-fluid " >
@@ -59,27 +62,29 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+               
 
                 <div className="container-fluid r2">
-                    <div className="container">
-                        <div className="sponsors">
+                <div className="container">
+                    <div className="sponsors">
 
-                            <span className="partner"><img src={partner2} width='100%' alt="" /></span>
-                            <span className="partner"><img src={partner1} width='100%' alt="" /></span>
-                            <span className="partner"><img src={partner3} width='100%' alt="" /></span>
-                            <span className="partner"><img src={partner4} width='100%' alt="" /></span>
-                            <span className="partner"><img src={partner5} width='100%' alt="" /></span>
+                        <span className="partner"><img src={partner2} width='100%' alt="" /></span>
+                        <span className="partner"><img src={partner1} width='100%' alt="" /></span>
+                        <span className="partner"><img src={partner3} width='100%' alt="" /></span>
+                        <span className="partner"><img src={partner4} width='100%' alt="" /></span>
+                        <span className="partner"><img src={partner5} width='100%' alt="" /></span>
 
-                        </div>
                     </div>
                 </div>
-
+            </div>
 
             </section>
+
 
             <Features />
             <Portfolio />
             <Register />
+      
             <Team />
             <Services />
             <Blog />

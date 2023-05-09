@@ -2,21 +2,19 @@
   font-family: 'Roboto', sans-serif;
  
 }
+
 :root{
   --prime-color:#34b1c4;
   --white-color:#fff;
   --darkgrey-color:#454545;
   --grey-color:#858585;
 }       
-
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 h1,
 h2,
 h3,
@@ -35,10 +33,10 @@ h6 {
 #Nav {
   position: fixed;
   z-index: 10;
-  background-color:var(--white-color);
   top: 0;
   left: 0;
   width: 100%;
+  background-color:var(--white-color);
 }
 .nav {
   display: flex;
@@ -95,7 +93,6 @@ nav li.active a{
   margin-bottom: 20px;
   /* transition: all 0.5s ease; */
 }
-
  #btn1 {
   text-transform: uppercase;
   color: var(--white-color) !important ;
@@ -105,7 +102,6 @@ nav li.active a{
   border-radius: 5px;
   padding: 0px 15px;
 }
-
 #btn1:hover {
   background-color: var(--white-color);
   color: var(--prime-color);
@@ -138,7 +134,6 @@ nav li.active a{
   flex-direction: row;
   align-content: center;
   color:var(--white-color);
-
 }
 .mainhead {
   color: var(--white-color);
@@ -198,22 +193,19 @@ span.partner:hover {
 /*=> This is a Features css */
 #Features {
   padding-top: 90px;
-  height: 83rem;
+ 
 }
-
-h2.head2 {
+h2.head2 {  
   text-align: center;
   color: var(--darkgrey-color);
   margin-bottom: 15px;
   font-weight: 700;
   line-height: 1.2;
 }
-
 .deco {
   text-align: center;
   margin-bottom: 10px;
 }
-
 .deco::after,
 .deco::before {
 
@@ -225,12 +217,10 @@ h2.head2 {
   height: 1px;
   margin: 0px 5px;
 }
-
 span.star {
   display: inline-block;
   width: 20px;
 }
-
 .ficon {
 
   padding: 18px 22px;
@@ -246,7 +236,6 @@ span.star {
   transition: all .50s ease-in-out;
   -moz-transition: all .50s ease-in-out;
   -webkit-transition: all .50s ease-in-out;
-
 }
 .ftext {
   padding: 0 10px;
@@ -256,20 +245,16 @@ span.star {
   color: var(--grey-color);
   margin-bottom: 15px;
 }
-
 .banner2 {
   background-color:var(--white-color);
-  /* padding: 90px 0; */
+  padding: 90px 0;
 }
-
-.r3 {
-  /* padding-bottom: 90px; */
-}
-
+/* .r3 {
+  padding-bottom: 90px;
+} */
 .c2 {
   margin: 10px 0px 30px 0px;
 }
-
 .fcontent {
   display: inline-block;
   padding-left: 0px;
@@ -323,12 +308,12 @@ span.star {
   color: var(--white-color);
 }
 
+
 /*=> This is a my portfolio css */
 .portfolio {
   padding: 90px 0px;
-  height: 53rem;
+  
 }
-
 .lightbox {
   display: grid;
   grid-template-rows: auto auto;
@@ -336,7 +321,6 @@ span.star {
   justify-items: center;
   position: relative;
 }
-
 /* This is a  Lightbox cover css */
 .image-container {
   margin: 10px;
@@ -344,37 +328,11 @@ span.star {
 }
 .port img {
   position: relative;
-
   width: 100%;
   height: auto;
 }
-/* .port {
-
-}
-.port:hover {
-
-} */
-
-.span.eye-wrapper {
-  background-color: #000;
-  position: absolute;
-  display: block;
-  overflow: hidden;
- 
-  height: 100% !important;
-  top: 0%;
-  margin-top: 0px;
-  left: 0%;
-  right: 0%;
-  font-size: 22px;
-  color: var(--white-color);
-  text-align: center;
-  font-weight: 300;
-  opacity: 0;
-}
 
 /* This is a lightbox css */
-
 .modal {
   display: flex;
   align-items: center;
@@ -385,16 +343,13 @@ span.star {
   width: 100%;
   height: 100%;
   background-color: #000000e6;
-  
 }
-
 .modal-content {
   position: relative;
   margin: auto;
   padding: 0;
   max-width: 800px;
 }
-
 .close {
   position: absolute;
   top: 0;
@@ -404,7 +359,6 @@ span.star {
   color: var(--white-color);
   cursor: pointer;
 }
-
 .prev,
 .next {
   position: absolute;
@@ -414,15 +368,70 @@ span.star {
   /* color: #fff; */
   cursor: pointer;
 }
-
 .prev {
   left: 10px;
 }
-
 .next {
   right: 10px;
 }
 
+.image-container {
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.social-icons {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.image-container:hover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.image-container:hover .social-icons {
+  display: block;
+}
+
+/* 
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  background-color: #fff;
+  color: #333;
+} */
 @media (max-width: 768px) {
   .modal-content {
     max-width: 500px;
@@ -433,45 +442,39 @@ span.star {
     font-size: 30px;
   }
 }
-
 @media (max-width: 576px) {
   .modal-content {
     max-width: 300px;
   }
-
   .prev,
   .next {
     font-size: 20px;
   }
 }
 
+
 /* This is a Register css */
 #Register{
   padding-top: 60px;
-  height: 37rem;
+
 }
 .register-image {
   display: inline-block;
 }
-
 .c41 {
   padding: 0px;
 }
-
 .c42 {
   background-color: var(--prime-color);
 }
-
 .register-content {
   padding: 50px 0 50px 35px;
   width: 100%;
   max-width: 585px;
 }
-
 .form {
   padding: 25px 0 20px 0
 }
-
 .register-input {
   outline: none;
   width: 100%;
@@ -485,17 +488,14 @@ span.star {
   font-size: 14px;
   border-radius: 5px 5px 5px 5px;
 }
-
 option {
   background-color: var(--white-color);
   color: var(--prime-color);
 }
-
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--white-color);
 }
-
 .register-submit {
   color: var(--prime-color);
   border: 1px solid var(--white-color);
@@ -511,17 +511,16 @@ option {
   border-radius: 3px 3px;
   transition: all 1s ease-in-out;
 }
-
 .register-submit:hover {
   color: var(--white-color);
   background-color: var(--prime-color);
 }
 
+
 /* This is a Team css */
 #Team {
   padding-top: 90px;
 }
-
 .team-box {
   text-align: center;
   background-color: var(--white-color);
@@ -532,14 +531,12 @@ option {
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
 }
-
 .team-box p.team-info {
   font-size: 16px;
   font-style: italic;
   margin-bottom: 5px;
   color: var(--grey-color);
 }
-
 .team-box h3 {
   margin: 20px 0 1px 0 !important;
   color: var(--darkgrey-color);
@@ -549,50 +546,42 @@ option {
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
 }
-
 .team-box h3:hover {
   color: var(--prime-color);
 }
-
 .carousel-indicators {
   position: inherit;
 }
+
 
 /* This is a Services css */
 #Services {
   padding: 90px 0px 0px 0px;
   background-color: var(--white-color);
 }
-
 span.services1 {
   display: block;
   margin: 0 auto;
   max-width: 1140px;
   margin: 20px 0px 40px 0px;
 }
-
 .scol {
   position: relative;
   margin-top: 20px;
 }
-
 .sicon {
   position: absolute;
   width: 48px;
 }
-
 .stext {
   padding-left: 60px;
 }
-
 .r62 {
   padding: 60px 0px;
 }
-
 .scol2 {
   margin: 50px 0px 30px 0px;
 }
-
 .sbtn {
   padding: 16px 28px;
   background-color: var(--prime-color);
@@ -604,15 +593,12 @@ span.services1 {
   letter-spacing: 1px;
   border-radius: 6px;
 }
-
 .sbtn:hover {
   background-color: #337ab7;
   color: var(--white-color);
   transition: all 0.25s ease-in-out;
 }
-
 .banner4 {
-
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(E:/Parth/digital-india/src/img/services2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -620,21 +606,19 @@ span.services1 {
   padding: 90px 0 90px 0;
   position: relative;
 }
-
 .bant4 {
   text-align: center;
   color: var(--white-color);
 }
 
+
 /* This is a Blog css  */
 #Blog {
   padding-top: 90px;
 }
-
 .blog-title {
   margin-top: 15px;
 }
-
 h5.blog-title a {
 
   font-size: 21px;
@@ -643,14 +627,12 @@ h5.blog-title a {
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
 }
-
 h5.blog-title a:hover {
   color: #228798;
   transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
 }
-
 .blog-icon {
   font-size: 14px;
   color: var(--darkgrey-color);
@@ -658,14 +640,12 @@ h5.blog-title a:hover {
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
 }
-
 .blog-icon:hover {
   color: #228798;
   transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
 }
-
 .bbtn {
   padding: 8px 16px;
   background-color: var(--prime-color);
@@ -678,28 +658,22 @@ h5.blog-title a:hover {
   border-radius: 6px;
   border: 2px solid var(--prime-color);
 }
-
 .bbtn:hover {
   background-color: var(--white-color);
   color: var(--prime-color);
   border: 2px solid var(--prime-color);
   transition: all 0.25s ease-in-out;
 }
-
 .blog-bg {
   background-color: var(--prime-color);
 }
-
 .banner5 {
   padding: 90px 0px;
 
 }
-
 .blog-text {
   color: var(--white-color);
 }
-
-
 .bbtn2 {
   padding: 12px 24px;
   background-color:var(--white-color);
@@ -712,7 +686,6 @@ h5.blog-title a:hover {
   border-radius: 6px;
   border: 2px solid var(--white-color);
 }
-
 .bbtn2:hover {
   background-color: var(--prime-color);
   color: var(--white-color);
@@ -720,12 +693,11 @@ h5.blog-title a:hover {
   transition: all 0.25s ease-in-out;
 }
 
+
 /* This is a Pricing css */
 #Pricing {
   padding-top: 90px;
-  
 }
-
 .pricing-box {
   /* margin-left: 10px;
   margin-right: 10px; */
@@ -739,7 +711,6 @@ h5.blog-title a:hover {
   border-right: 1px solid var(--white-color);
   border-bottom: 2px solid var(--white-color);
 }
-
 .pricing-box .pricing-top {
   background-color: var(--prime-color);
   padding: 20px 0;
@@ -747,7 +718,6 @@ h5.blog-title a:hover {
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
 }
-
 .pricing-top h3 {
   color: var(--white-color);
   font-size: 22px;
@@ -758,7 +728,6 @@ h5.blog-title a:hover {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
 }
-
 .pricing-top .price .currency {
   color: var(--white-color);
   font-size: 24px;
@@ -767,32 +736,27 @@ h5.blog-title a:hover {
   vertical-align: top;
   display: inline-block;
 }
-
 .pricing-top .price span.number {
   color:var(--white-color);
   font-size: 36px;
   line-height: 42px;
   font-weight: 700;
 }
-
 .pricing-top .price .month {
   color:var(--white-color);
   font-size: 16px;
   line-height: 18px;
   font-weight: 600;
 }
-
 .pricing-bottom {
   padding: 0 35px 40px 35px;
 }
-
 .pricing-bottom ul {
   margin: 35px 0px 40px;
   padding: 0;
   color: var(--grey-color);
   line-height: 30px;
 }
-
 .pbtn {
   display: block;
   width: 100%;
@@ -803,13 +767,11 @@ h5.blog-title a:hover {
   font-weight: 600;
   transition: all 0.25s ease-in-out;
 }
-
 .pbtn:hover {
   color:var(--white-color);
   background-color:var(--prime-color);
   border: 2px solid var(--prime-color);
 }
-
 .pbtn2 {
   display: block;
   width: 100%;
@@ -820,28 +782,25 @@ h5.blog-title a:hover {
   font-weight: 600;
   transition: all 0.25s ease-in-out;
 }
-
 .pbtn2:hover {
   color: var(--prime-color);
   background-color:var(--white-color);
   /* border: 2px solid #fff; */
   border: 2px solid var(--prime-color);
 }
-
 .condition2 {
   color: var(--grey-color);
 }
+
 
 /* This is a Contact css */
 #Contact {
   background-color: #393f43;
   padding: 90px 0;
 }
-
 #contact-form {
   text-align: center;
 }
-
 input.contact-input {
   outline: none;
   letter-spacing: 1px;
@@ -858,7 +817,6 @@ input.contact-input {
   -moz-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
 }
-
 textarea {
   outline: none;
   height: 205px;
@@ -876,7 +834,6 @@ textarea {
   -moz-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
 }
-
 .contact-submit {
   color:var(--white-color);
   border: 2px solid var(--prime-color);
@@ -895,17 +852,13 @@ textarea {
   transition: all .50s ease-in-out;
   -moz-transition: all .50s ease-in-out;
   -webkit-transition: all .50s ease-in-out;
-
 }
-
 .contact-submit:hover {
   color: var(--prime-color);
   background-color: transparent;
   border: 2px solid #fff;
   border: 2px solid var(--prime-color);
 }
-
-
 #Footer {
   z-index: 900;
   background-color: #2f3539;
@@ -913,12 +866,10 @@ textarea {
   padding: 55px 0;
   font-weight: 300;
 }
-
 .copyright p {
   margin-top: 20px;
   color:var(--white-color);
 }
-
 .footer_social {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -927,11 +878,9 @@ textarea {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .footer_social li {
   margin: 0px 8px;
 }
-
 a.ibtn {
   background-color: transparent;
   border: 2px solid #808080;
@@ -939,9 +888,7 @@ a.ibtn {
   display: inline-block;
   padding: 2px 4px;
   color: #808080;
-
 }
-
 a.ibtn:hover {
   background-color: var(--prime-color);
   border: 2px solid var(--prime-color);

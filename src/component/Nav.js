@@ -7,31 +7,32 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const Nav = () => {
    
-    const [activeSection, setActiveSection] = useState(null);
-   
-
-    useEffect(() => {
-      
-      const handleScroll = () => {
-        const sections = document.querySelectorAll("section");
-        const scrollPosition = window.pageYOffset;
-       
-        sections.forEach((section,index) => {
-          const top = section.offsetTop;
-          const height = section.offsetHeight;
-          
-          if (scrollPosition >= top && scrollPosition < top + height) {
-           
-            setActiveSection(index);
-          }
-         
-        });
-      };
-      
-      window.addEventListener("scroll", handleScroll);
   
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+
+        const [activeSection, setActiveSection] = useState(null);
+      
+        useEffect(() => {
+          const handleScroll = () => {
+            const sections = document.querySelectorAll("section");
+            const scrollPosition = window.pageYOffset;
+      
+            sections.forEach((section, index) => {
+              const top = section.offsetTop;
+              const height = section.offsetHeight;
+      
+              if (
+                scrollPosition >= top - window.innerHeight * 0.5 &&
+                scrollPosition < top + height - window.innerHeight * 0.5
+              ) {
+                setActiveSection(index);
+              }
+            });
+          };
+      
+          window.addEventListener("scroll", handleScroll);
+      
+          return () => window.removeEventListener("scroll", handleScroll);
+        }, []);
     
 
     return (
@@ -55,7 +56,6 @@ const Nav = () => {
                         <li className={activeSection === 0 ? "active" : ""} >
                             <HashLink
                                 to="#Home" 
-                             
                             >
                                 Home
                             </HashLink>
@@ -64,7 +64,6 @@ const Nav = () => {
                         <li className={activeSection === 1 ? "active" : ""}>
                             <HashLink
                                 to="#Features"
-                               
                             >
                                 Features
                             </HashLink>
@@ -73,7 +72,6 @@ const Nav = () => {
                         <li className={activeSection === 2 ? "active" : ""}>
                             <HashLink
                                 to="#Portfolio"
-                            
                             >
                                 Portfolio
                             </HashLink>
@@ -82,7 +80,6 @@ const Nav = () => {
                         <li className={activeSection === 3 ? "active" : ""}>
                             <HashLink
                                 to="#Register"
-                               
                             >
                                 Register
                             </HashLink>
@@ -127,10 +124,10 @@ const Nav = () => {
                         <button className={activeSection === 8 ? "active" : ""}  id="btn1">
                             <HashLink
                                 to="#Contact"
-                               
                             >Contact us
                             </HashLink>
                         </button>
+                        
                     </ul>
 
                 </div>

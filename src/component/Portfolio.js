@@ -20,6 +20,7 @@ const images = [
 const Portfolio = () => {
   return (
     <section className="portfolio" id="Portfolio">
+      
       <div className="container">
         <h2 className='head2'>Our Latest Work</h2>
         <div className="deco">
