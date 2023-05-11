@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import './lightbox.css';
-import { FiMove } from 'react-icons/fi';
+// import { FiMove } from 'react-icons/fi';
 
 
 const Lightbox = ({ images }) => {
@@ -40,13 +40,13 @@ const Lightbox = ({ images }) => {
                 width="100%"
               />
            </a>
-            <ul className="social-icons">
+            {/* <ul className="social-icons">
               <li>
                 <a href="#Portfolio">
                  <FiMove/>
                 </a>
               </li>
-            </ul>
+            </ul> */}
        
           </div>
         ))}

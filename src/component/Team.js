@@ -22,56 +22,112 @@ const Team = () => {
 
       <div id="carouselExampleIndicators" className="carousel carousel-dark slide">
         <div className="carousel-inner">
+
           <div className="carousel-item active">
             <div className="row">
+
               <div className="col-md-4">
-                <img src={team1} className="d-block w-100" alt="..." />
+                <div className="team-img">
+                  <img src={team1} className="d-block w-100" width="100%" alt="..." />
+                  <div className="team-overlay">
+                    <div className="team-icons">
+<a href='#Team'></a>
+<a href='#Team'></a>
+<a href='#Team'></a>
+<a href='#Team'></a>
+                    </div>
+                  </div>
+                </div>
                 <div className="team-box">
                   <h3>Joanna Hawkins</h3>
                   <p className="team-info">Graphic Designer</p>
                 </div>
               </div>
+
               <div className="col-md-4">
+              <div className="team-img">
                 <img src={team2} className="d-block w-100" alt="..." />
+                <div className="team-overlay">
+                    <div className="team-icons">
+
+                    </div>
+                  </div>
+                </div>
                 <div className="team-box">
                   <h3 >JOHNATAN SMITHS</h3>
                   <p className="team-info">SEO Specialist</p>
                 </div>
               </div>
+
               <div className="col-md-4">
+              <div className="team-img">
                 <img src={team3} className="d-block w-100" alt="..." />
+                <div className="team-overlay">
+                    <div className="team-icons">
+
+                    </div>
+                  </div>
+                </div>
                 <div className="team-box">
                   <h3>RICHARD JOHANSON</h3>
                   <p className="team-info">Web Developer</p>
                 </div>
               </div>
+
             </div>
           </div>
+
           <div className="carousel-item">
             <div className="row">
+
               <div className="col-md-4">
+              <div className="team-img">
                 <img src={team4} className="d-block w-100" alt="..." />
+                <div className="team-overlay">
+                    <div className="team-icons">
+
+                    </div>
+                  </div>
+                </div>
                 <div className="team-box">
                   <h3>CHRISTINA HAWKINS</h3>
                   <p className="team-info">Graphic Designer</p>
                 </div>
               </div>
+
               <div className="col-md-4">
+              <div className="team-img">
                 <img src={team5} className="d-block w-100" alt="..." />
+                <div className="team-overlay">
+                    <div className="team-icons">
+
+                    </div>
+                  </div>
+                </div>
                 <div className="team-box">
                   <h3>RICHARD JOHANSON</h3>
                   <p className="team-info">SEO Specialist</p>
                 </div>
               </div>
+
               <div className="col-md-4">
+              <div className="team-img">
                 <img src={team6} className="d-block w-100" alt="..." />
+                <div className="team-overlay">
+                    <div className="team-icons">
+
+                    </div>
+                  </div>
+                </div>
                 <div className="team-box">
                   <h3>ALEXANDRA SMITHS</h3>
                   <p className="team-info">Graphic Designer</p>
                 </div>
               </div>
+
             </div>
           </div>
+
         </div>
 
         <div className="carousel-indicators">

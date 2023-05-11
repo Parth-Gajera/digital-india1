@@ -19,6 +19,7 @@ import Blog from './Blog'
 import Pricing from './Pricing'
 import Contact from './Contact'
 
+
 // import Features1 from './Features1'
 
 
@@ -32,6 +33,7 @@ const Home = () => {
         <>
             <Nav />
             {/* <Navbar/> */}
+           
 
             <section id="Home">
                 <div className="hero-image container-fluid " >

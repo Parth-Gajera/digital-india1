@@ -1,6 +1,7 @@
 import React from 'react';
 import Lightbox from './Lightbox';
 
+
 import star from "../img/star .png";
 
 
@@ -31,6 +32,7 @@ const Portfolio = () => {
         </p>
 
         <Lightbox images={images} />
+       
 
       </div>
     </section>
