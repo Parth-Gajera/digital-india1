@@ -8,6 +8,11 @@ import team4 from '../img/team4.jpg'
 import team5 from '../img/team5.jpg'
 import team6 from '../img/team6.jpg'
 
+import { BsTwitter } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
+import { BsPinterest } from 'react-icons/bs';
+import { FaYoutubeSquare } from 'react-icons/fa';
+
 const Team = () => {
   return (
     <section className="team container" id="Team">
@@ -31,10 +36,10 @@ const Team = () => {
                   <img src={team1} className="d-block w-100" width="100%" alt="..." />
                   <div className="team-overlay">
                     <div className="team-icons">
-<a href='#Team'></a>
-<a href='#Team'></a>
-<a href='#Team'></a>
-<a href='#Team'></a>
+                      <a href='#Team'><BsTwitter className='ticon' /></a>
+                      <a href='#Team'><FaFacebookF className='ticon' /></a>
+                      <a href='#Team'><BsPinterest className='ticon' /></a>
+                      <a href='#Team'><FaYoutubeSquare className='ticon' /></a>
                     </div>
                   </div>
                 </div>
@@ -45,11 +50,14 @@ const Team = () => {
               </div>
 
               <div className="col-md-4">
-              <div className="team-img">
-                <img src={team2} className="d-block w-100" alt="..." />
-                <div className="team-overlay">
+                <div className="team-img">
+                  <img src={team2} className="d-block w-100" alt="..." />
+                  <div className="team-overlay">
                     <div className="team-icons">
-
+                      <a href='#Team'><BsTwitter className='ticon' /></a>
+                      <a href='#Team'><FaFacebookF className='ticon' /></a>
+                      <a href='#Team'><BsPinterest className='ticon' /></a>
+                      <a href='#Team'><FaYoutubeSquare className='ticon' /></a>
                     </div>
                   </div>
                 </div>
@@ -60,11 +68,14 @@ const Team = () => {
               </div>
 
               <div className="col-md-4">
-              <div className="team-img">
-                <img src={team3} className="d-block w-100" alt="..." />
-                <div className="team-overlay">
+                <div className="team-img">
+                  <img src={team3} className="d-block w-100" alt="..." />
+                  <div className="team-overlay">
                     <div className="team-icons">
-
+                      <a href='#Team'><BsTwitter className='ticon' /></a>
+                      <a href='#Team'><FaFacebookF className='ticon' /></a>
+                      <a href='#Team'><BsPinterest className='ticon' /></a>
+                      <a href='#Team'><FaYoutubeSquare className='ticon' /></a>
                     </div>
                   </div>
                 </div>
@@ -81,11 +92,14 @@ const Team = () => {
             <div className="row">
 
               <div className="col-md-4">
-              <div className="team-img">
-                <img src={team4} className="d-block w-100" alt="..." />
-                <div className="team-overlay">
+                <div className="team-img">
+                  <img src={team4} className="d-block w-100" alt="..." />
+                  <div className="team-overlay">
                     <div className="team-icons">
-
+                      <a href='#Team'><BsTwitter className='ticon' /></a>
+                      <a href='#Team'><FaFacebookF className='ticon' /></a>
+                      <a href='#Team'><BsPinterest className='ticon' /></a>
+                      <a href='#Team'><FaYoutubeSquare className='ticon' /></a>
                     </div>
                   </div>
                 </div>
@@ -96,11 +110,14 @@ const Team = () => {
               </div>
 
               <div className="col-md-4">
-              <div className="team-img">
-                <img src={team5} className="d-block w-100" alt="..." />
-                <div className="team-overlay">
+                <div className="team-img">
+                  <img src={team5} className="d-block w-100" alt="..." />
+                  <div className="team-overlay">
                     <div className="team-icons">
-
+                      <a href='#Team'><BsTwitter className='ticon' /></a>
+                      <a href='#Team'><FaFacebookF className='ticon' /></a>
+                      <a href='#Team'><BsPinterest className='ticon' /></a>
+                      <a href='#Team'><FaYoutubeSquare className='ticon' /></a>
                     </div>
                   </div>
                 </div>
@@ -111,11 +128,14 @@ const Team = () => {
               </div>
 
               <div className="col-md-4">
-              <div className="team-img">
-                <img src={team6} className="d-block w-100" alt="..." />
-                <div className="team-overlay">
+                <div className="team-img">
+                  <img src={team6} className="d-block w-100" alt="..." />
+                  <div className="team-overlay">
                     <div className="team-icons">
-
+                      <a href='#Team'><BsTwitter className='ticon' /></a>
+                      <a href='#Team'><FaFacebookF className='ticon' /></a>
+                      <a href='#Team'><BsPinterest className='ticon' /></a>
+                      <a href='#Team'><FaYoutubeSquare className='ticon' /></a>
                     </div>
                   </div>
                 </div>

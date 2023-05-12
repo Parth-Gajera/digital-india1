@@ -8,7 +8,9 @@ const Register = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6 c41">
-            <span className="register-image"><img src={register} alt="" width='100%' /></span>
+            {/* <span className="register-image"> */}
+              <img src={register} alt="" width='100%' />
+              {/* </span> */}
           </div>
           <div className="col-md-6 c42">
             <div className='register-content'>

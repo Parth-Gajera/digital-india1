@@ -38,7 +38,7 @@ const Nav = () => {
     return (
         <div className="container-fluid" id="Nav">
 
-            <nav className="navbar navbar-expand-md container nav">
+            <nav className="container navbar navbar-expand-lg  nav">
 
                 <div>
                     <a className="navbar-brand" href='#Home'><span className='brand'><span className="blue">Dig</span>India</span></a>
@@ -120,18 +120,17 @@ const Nav = () => {
                                 Pricing
                             </HashLink>
                         </li>
-     
-                        <button className={activeSection === 8 ? "active" : ""}  id="btn1">
-                            <HashLink
-                                to="#Contact"
-                            >Contact us
-                            </HashLink>
-                        </button>
-                        
+        
                     </ul>
 
-                </div>
+                        {/* <button id="btn1"> */}
+                            <HashLink
+                                to="#Contact" className="contact-btn"
+                            >Contact us
+                            </HashLink>
+                        {/* </button> */}
 
+                </div>
 
             </nav >
 

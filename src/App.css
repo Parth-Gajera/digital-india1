@@ -48,6 +48,7 @@ h6 {
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0px;
+  line-height: 75px;
 }
 
 .brand {
@@ -105,30 +106,24 @@ nav li.active a {
   /* transition: all 0.5s ease; */
 }
 
-#btn1 {
+.contact-btn{
   text-transform: uppercase;
+  font-weight: 700 !important;
   color: var(--white-color) !important;
   font-size: 14px;
   background-color: var(--prime-color);
   border: 2px solid var(--prime-color);
   border-radius: 5px;
-  padding: 0px 15px;
+  padding: 0px 10px;
+  line-height: 40px;
 }
-
-#btn1:hover {
+.contact-btn:hover{
+  color: var(--prime-color) !important;
   background-color: var(--white-color);
-  color: var(--prime-color);
+  transition: all .50s ease-in-out;
+  -moz-transition: all .50s ease-in-out;
+  -webkit-transition: all .50s ease-in-out;
 }
-
-#btn1 .active {
-  background-color: var(--prime-color);
-  border: 2px solid var(--prime-color);
-  padding: 0px;
-  line-height: 45px;
-  font-weight: 700 !important;
-  margin-bottom: 0px;
-}
-
 
 /*=> This is a Home css */
 #Home {
@@ -361,19 +356,16 @@ span.star {
   grid-template-columns: auto auto auto;
   justify-items: center;
   position: relative;
-  z-index:3;
+  z-index: 3;
 }
 
-/* This is a  Lightbox cover css */
- /* .image-container {
+.image-container {
   margin: 10px;
-  cursor: pointer;
-}  */
-/* .port img {
   position: relative;
-  width: 100%;
-  height: auto;
-}  */
+}
+
+
+/* This is a  Lightbox-modal css */
 
 .modal {
   display: flex;
@@ -385,13 +377,18 @@ span.star {
   width: 100%;
   height: 100%;
   background-color: #000000e6;
+
 }
+
 .modal-content {
   position: relative;
   margin: auto;
   padding: 0;
   max-width: 800px;
+  z-index: 5;
 }
+
+
 .close {
   position: absolute;
   top: 0;
@@ -401,6 +398,7 @@ span.star {
   color: var(--white-color);
   cursor: pointer;
 }
+
 .prev,
 .next {
   position: absolute;
@@ -410,88 +408,72 @@ span.star {
   /* color: #fff; */
   cursor: pointer;
 }
+
 .prev {
   left: 10px;
 }
+
 .next {
   right: 10px;
 }
 
-/* This is a lightbox css */
-.image-container {
-  margin: 10px;
-  position: relative;
-}
-
-/* .image-container:hover:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
-  opacity: 0.8;
-} */
-
-/* .image-container:hover .social-icons {
-  display: block;
-} */
-
-/* .social-icons {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  pointer-events: none;
-}
-
-.social-icons li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-icons li:last-child {
-  margin-right: 0;
-}
-
-.social-icons a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  border-radius: 50%;
-  background-color: #333;
-  transition: all 0.3s ease-in-out;
-  pointer-events: none; 
-} */
-
-/* .image-container:hover img {
-  opacity: 0.5;
-} */
-
-/* .image-container:hover .image-overlay {
-  display: block;
-} */
+/* This is a lightbox cover css */
 /* 
-.image-overlay {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+.port-img {
   width: 100%;
-  height: 100%;
-  z-index: 3;
-  cursor: pointer;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.port-overlay {
+
+  background-color: #000;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  z-index: 2;
+  height: 100% !important;
+  top: 0%;
+  margin-top: 0px;
+  left: 0%;
+  right: 0%;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+
+}
+
+.port-overlay:hover {
+  opacity: 0.8 !important;
+}
+
+.port-icon {
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picon {
+  color: var(--white-color);
+  margin: 0px 5px;
+  font-size: 28px;
+}
+
+.picon:hover {
+  color: var(--prime-color);
 } */
 
- 
+
+
 
 /* This is a Register css */
 #Register {
@@ -499,12 +481,14 @@ span.star {
 
 }
 
-.register-image {
+/* .register-image {
   display: inline-block;
-}
+} */
 
 .c41 {
+  display: flex;
   padding: 0px;
+
 }
 
 .c42 {
@@ -571,20 +555,22 @@ option {
 #Team {
   padding-top: 90px;
 }
-.team-img{
+
+.team-img {
   width: 100%;
-    display: block;
-    position: relative;
-    overflow: hidden;
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
+
 .team-overlay {
-  
+
   background-color: #000;
   position: absolute;
   display: block;
   overflow: hidden;
   z-index: 2;
-  height: 100%!important;
+  height: 100% !important;
   top: 0%;
   margin-top: 0px;
   left: 0%;
@@ -593,17 +579,36 @@ option {
   color: #fff;
   text-align: center;
   font-weight: 300;
-  opacity:0;
+  opacity: 0;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 
-} 
+}
+
 .team-overlay:hover {
-  opacity: 0.8!important;
-} 
+
+  opacity: 0.8 !important;
+}
+
+.team-icons {
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticon {
+  color: var(--white-color);
+  margin: 0px 5px;
+  font-size: 28px;
+}
+
+.ticon:hover {
+  color: var(--prime-color);
+}
 
 .team-box {
   text-align: center;
@@ -696,6 +701,7 @@ span.services1 {
   transition: all 0.25s ease-in-out;
 }
 
+
 .banner4 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(E:/Parth/digital-india/src/img/services2.jpg);
   background-repeat: no-repeat;
@@ -715,6 +721,60 @@ span.services1 {
 #Blog {
   padding-top: 90px;
 }
+
+.blog-images {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-overlay {
+
+  background-color: #000;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  z-index: 2;
+  height: 100% !important;
+  top: 0%;
+  margin-top: 0px;
+  left: 0%;
+  right: 0%;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+
+}
+
+.blog-overlay:hover {
+  opacity: 0.8 !important;
+}
+
+.blog-icons {
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bicon {
+  color: var(--white-color);
+  margin: 0px 5px;
+  font-size: 28px;
+}
+
+.bicon:hover {
+  color: var(--prime-color);
+}
+
 
 .blog-title {
   margin-top: 15px;
@@ -1028,4 +1088,18 @@ a.ibtn:hover {
   background-color: var(--prime-color);
   border: 2px solid var(--prime-color);
   color: var(--white-color);
+}
+
+
+
+
+
+
+/* ==========================================================================*/
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
 }
