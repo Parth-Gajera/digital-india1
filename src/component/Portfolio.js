@@ -27,7 +27,7 @@ const Portfolio = () => {
         <div className="deco">
           <span className="star"><img src={star} alt="" width="100%" /></span>
         </div>
-        <p className='text-center' style={{ opacity: '.5',marginBottom:'40px' }}>There are many variations of passages of Lorem Ipsum available, but the majority<br />
+        <p className='text-center' style={{ opacity: '.5',marginBottom:'40px' }}>There are many variations of passages of Lorem Ipsum available, but the majority
           have suffered alteration, by injected humour, or new randomised words.
         </p>
 

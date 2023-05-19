@@ -1,7 +1,8 @@
 * {
   font-family: 'Roboto', sans-serif;
-
+  overflow-x: hidden;
 }
+
 
 :root {
   --prime-color: #34b1c4;
@@ -35,9 +36,9 @@ h6 {
 /*=> This is a Nav css */
 #Nav {
   position: fixed;
-  z-index: 10;
   top: 0;
   left: 0;
+  z-index: 11;
   width: 100%;
   background-color: var(--white-color);
 }
@@ -48,9 +49,10 @@ h6 {
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0px;
-  line-height: 75px;
 }
-
+.header{
+  line-height: 65px;
+}
 .brand {
   color: var(--darkgrey-color);
   font-size: 28px;
@@ -126,24 +128,25 @@ nav li.active a {
 }
 
 /*=> This is a Home css */
-#Home {
-  padding-top: 45px;
-}
 
-.hero-image {
-  background-image: url("E:/Parth/digital-india/src/img/hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+.home{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.hero {
+  object-fit: cover;
+  width: 100vw;
   height: 100vh;
-  position: relative;
+  object-position:top center;
+  position: absolute;
+  z-index: 1;
 }
 
 .r1 {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  /* align-content: center;  */
   color: var(--white-color);
 }
 
@@ -151,6 +154,8 @@ nav li.active a {
   color: var(--white-color);
   visibility: visible;
   animation: parth 3s;
+  position: relative;
+  z-index: 2;
   /* animation-delay: 5s; */
   /* animation-timing-function: ease-in; */
 }
@@ -165,23 +170,31 @@ nav li.active a {
   }
 } */
 
+
 .hero-text {
-  display: flex;
-
-}
-
-.htext {
   padding-left: 0px !important;
+  position: relative;
+  z-index: 2;
 }
 
-.hicon {
+.hero-list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.hicon{
   display: inline-block;
   width: 64px;
   margin-right: 20px;
+  position: relative;
+  z-index: 2;
 }
 
-.text {
+.htext {
   opacity: 0.5;
+  position: relative;
+  z-index: 2;
 }
 
 span.partner {
@@ -208,6 +221,7 @@ span.partner:hover {
   justify-content: space-around;
 
 }
+
 
 
 
@@ -1096,10 +1110,77 @@ a.ibtn:hover {
 
 
 /* ==========================================================================*/
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
+.nav{
+  display: block;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-@media only screen and (max-width: 1024px) {
+span.partner {
+  width: 120px;
+}
+.head21{
+  font-size: 20px;
+}
+.fimg{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.col-md-6.scol1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.pbtn{
+  font-size: 14px;
+} 
+.pbtn2{
+  font-size: 14px;
+} 
+h3{
+font-size: calc(1.1rem + .6vw);
+}
+}
+@media only screen and (max-width: 767px){
+span.partner{
+  width: 90px;
+}
+.c2 {
+  margin: 25px 0px 30px 0px;
+}
+.attach1{
+  display: block;
+}
+.bbtn {
+margin-bottom: 25px;
+}
+.register-content{
+  padding: 50px 0px 50px 0px;
+}
+}
+@media only screen and (max-width: 575px){
+  .mainhead{
+    font-size: calc(1.2rem + 1.5vw);
+  }
+  .htext{
+        font-size: 14px;
+  }
+  span.partner {
+    width: 80px;
+  }
+  .register-content{
+    padding: 50px 0 50px 0px;
+  }
+}
+@media only screen and (max-width: 480px){
+
 
 }

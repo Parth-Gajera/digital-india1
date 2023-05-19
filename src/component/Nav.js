@@ -40,7 +40,7 @@ const Nav = () => {
 
             <nav className="container navbar navbar-expand-lg  nav">
 
-                <div>
+                <div className="header">
                     <a className="navbar-brand" href='#Home'><span className='brand'><span className="blue">Dig</span>India</span></a>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,13 +123,11 @@ const Nav = () => {
         
                     </ul>
 
-                        {/* <button id="btn1"> */}
                             <HashLink
                                 to="#Contact" className="contact-btn"
                             >Contact us
                             </HashLink>
-                        {/* </button> */}
-
+                    
                 </div>
 
             </nav >

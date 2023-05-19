@@ -25,7 +25,7 @@ const Features = () => {
           <div className="deco">
             <span className="star"><img src={star} alt="" width="100%" /></span>
           </div>
-          <p className='text-center' style={{ opacity: '.5', marginBottom: '20px' }}>There are many variations of passages of Lorem Ipsum available, but the majority<br />
+          <p className='text-center' style={{ opacity: '.5', marginBottom: '20px' }}>There are many variations of passages of Lorem Ipsum available, but the majority
             have suffered alteration, by injected humour, or new randomised words.</p>
           <div className="row r3">
             <div className="col-md-4 text-center">

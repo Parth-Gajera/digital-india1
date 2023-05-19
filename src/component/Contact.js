@@ -20,7 +20,7 @@ const Contact = () => {
                         <div className="deco">
                             <span className="star"><img src={star} alt="" width="100%" /></span>
                         </div>
-                        <p className='text-center' style={{ opacity: '.5', marginBottom: '50px', color: '#fff' }}>There are many variations of passages of Lorem Ipsum available, but the majority<br />
+                        <p className='text-center' style={{ opacity: '.5', marginBottom: '50px', color: '#fff' }}>There are many variations of passages of Lorem Ipsum available, but the majority
                             have suffered alteration, by injected humour, or new randomised words.</p>
 
                         <form id="contact-form" className="row" action="php/contact.php" method="post">
