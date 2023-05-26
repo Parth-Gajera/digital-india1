@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-// import './lightbox.css';
-// import { FiMove } from 'react-icons/fi';
 
 
 const Lightbox = ({ images }) => {
@@ -39,21 +37,13 @@ const Lightbox = ({ images }) => {
                 onClick={() => openLightbox(index)}
                 width="100%"
               />
-           </a>
-            {/* <ul className="social-icons">
-              <li>
-                <a href="#Portfolio">
-                 <FiMove/>
-                </a>
-              </li>
-            </ul> */}
-       
+            </a>
+
+
           </div>
         ))}
       </div>
-              {/* <span class="eye-wrapper">
-        
-              <i class="icon icon-cursor-move eye-icon" ></i></span> */}
+
 
       {isOpen && (
         <div className="modal">
