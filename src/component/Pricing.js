@@ -82,8 +82,8 @@ const Pricing = () => {
                 <div className="text-center">
                     <p className='condition2'>*With more than <b>25078 clients</b>, we aim to offer premium <b>marketing solutions</b> for your business.</p>
                 </div>
-                
-            </div>  
+
+            </div>
         </section>
     )
 }
