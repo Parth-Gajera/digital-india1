@@ -1,12 +1,12 @@
 import React from 'react'
 
 import star from "../img/star .png"
-import {AiOutlineTwitter } from 'react-icons/ai';
-import {FaPinterestP} from 'react-icons/fa';
-import {FaFacebookF} from 'react-icons/fa';
-import {TiSocialInstagram} from 'react-icons/ti';
-import {RiSkypeFill} from 'react-icons/ri';
-import {RiWhatsappFill} from 'react-icons/ri';
+import { AiOutlineTwitter } from 'react-icons/ai';
+import { FaPinterestP } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa';
+import { TiSocialInstagram } from 'react-icons/ti';
+import { RiSkypeFill } from 'react-icons/ri';
+import { RiWhatsappFill } from 'react-icons/ri';
 
 
 const Contact = () => {
@@ -53,51 +53,51 @@ const Contact = () => {
                 <div className="container">
                     <div className="row">
 
-                      
+
                         <div className="col-md-12 text-center">
 
                             <div className="copyright">
-                            <a className="navbar-brand" href='#Home'><span className='brand' style={{marginBottom:"20px",color:'white'}}><span className="blue">Dig</span>India</span></a>
-                                <p>Copyright © 2023. Designed &amp; Developed by <a href="#Home" style={{color:'#34b1c4'}} >Parth Gajera</a></p>
+                                <a className="navbar-brand" href='#Home'><span className='brand' style={{ marginBottom: "20px", color: 'white' }}><span className="blue">Dig</span>India</span></a>
+                                <p>Copyright © 2023. Designed &amp; Developed by <a href="#Home" style={{ color: '#34b1c4' }} >Parth Gajera</a></p>
                             </div>
-                           
+
 
                             <ul className="footer_social">
                                 <li>
                                     <a href="#Home" className='ibtn'>
-                                     <AiOutlineTwitter className='icon'/>
+                                        <AiOutlineTwitter className='icon' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#Home" className='ibtn'>
-                                <RiWhatsappFill className='icon'/>
+                                        <RiWhatsappFill className='icon' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#Home" className='ibtn'>
-                                <FaFacebookF className='icon'/>
+                                        <FaFacebookF className='icon' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#Home" className='ibtn'>
-                                <TiSocialInstagram className='icon'/>
+                                        <TiSocialInstagram className='icon' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#Home" className='ibtn'>
-                                <RiSkypeFill className='icon'/>
+                                        <RiSkypeFill className='icon' />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#Home" className='ibtn'>
-                                        <FaPinterestP className='icon'/>
+                                        <FaPinterestP className='icon' />
                                     </a>
                                 </li>
                             </ul>
-                          
+
 
                         </div>
-                  
+
 
                     </div>
                 </div>
