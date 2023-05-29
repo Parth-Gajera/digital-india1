@@ -89,7 +89,7 @@ const Blog = () => {
 
                     <div className="row">
                         <div className="col-md-6 blog-text">
-                            <h3 className="text-white" style={{ "font-size": "32px" }}>Design &amp; style should always work toward making you feel good.</h3>
+                            <h3 className="text-white" style={{ fontSize: "32px" }}>Design &amp; style should always work toward making you feel good.</h3>
                             <p className="">Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum lorem fugit, sed quia magni dolores eos qui ratione sequi nesciunt. Neque et poris ratione sequi enim ipsam voluptatem quia volupti tempor ante netsum quia magni.</p>
                             <ul style={{ paddingLeft: "0px", lineHeight: '28px', fontSize: '15px' }}>
                                 <li className=""> <img src={check1} alt="" />  Netsum est, qui ipsum quiaim netsum sequi net tempor.</li>

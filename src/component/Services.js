@@ -72,7 +72,7 @@ const Services = () => {
                 </div>
                 <div className="row r62">
                     <div className="col-md-6 scol1">
-                        <iframe src="https://player.vimeo.com/video/69988283?h=374ede24b7" width='100%' height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        <iframe title='Services' src="https://player.vimeo.com/video/69988283?h=374ede24b7" width='100%' height="360"  allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className="col-md-6 scol2">
 

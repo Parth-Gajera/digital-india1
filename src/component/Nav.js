@@ -1,4 +1,4 @@
-import { useState, useEffect, Component } from "react";
+import { useState, useEffect } from "react";
 
 
 import { HashLink } from 'react-router-hash-link';
