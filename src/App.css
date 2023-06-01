@@ -83,7 +83,7 @@ nav ul {
 
 nav li a {
   font-size: 14px;
-  line-height: 45px;
+
   text-transform: uppercase;
   font-weight: 700 !important;
   color: var(--darkgrey-color);
@@ -92,7 +92,7 @@ nav li a {
 
 nav li a:hover {
   font-size: 14px;
-  line-height: 45px;
+
   text-transform: uppercase;
   font-weight: 700 !important;
   color: var(--prime-color);
@@ -101,7 +101,7 @@ nav li a:hover {
 
 nav li.active a {
   font-size: 14px;
-  line-height: 45px;
+ 
   text-transform: uppercase;
   font-weight: 700 !important;
   color: var(--prime-color);
