@@ -1060,6 +1060,7 @@ a.ibtn:hover {
 
   .nav ul {
     align-items: flex-start;
+     overflow-x: hidden;
   }
   
   .contact-tab {
