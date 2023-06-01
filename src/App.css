@@ -1058,6 +1058,10 @@ a.ibtn:hover {
 
   }
 
+  .nav ul {
+    align-items: flex-start;
+  }
+  
   .contact-tab {
     margin-bottom: 10px;
   }
