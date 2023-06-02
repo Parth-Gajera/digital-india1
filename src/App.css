@@ -1,6 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
+
 }
 
 
@@ -60,7 +60,6 @@ h6 {
   font-size: 28px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
-  line-height: 20px;
   cursor: pointer;
 }
 
@@ -101,7 +100,7 @@ nav li a:hover {
 
 nav li.active a {
   font-size: 14px;
- 
+
   text-transform: uppercase;
   font-weight: 700 !important;
   color: var(--prime-color);
@@ -1058,11 +1057,15 @@ a.ibtn:hover {
 
   }
 
-  .nav ul {
+  nav ul {
     align-items: flex-start;
-     overflow-x: hidden;
+
   }
-  
+
+  nav li a {
+    line-height: 45px;
+  }
+
   .contact-tab {
     margin-bottom: 10px;
   }
