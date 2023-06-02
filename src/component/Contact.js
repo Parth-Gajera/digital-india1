@@ -16,7 +16,7 @@ const Contact = () => {
                 <div className="container-fluid">
                     <div className="container">
 
-                        <h2 className='head2 text-white'>Our Latest News</h2>
+                        <h2 className='head2 text-white'>Get In Touch</h2>
                         <div className="deco">
                             <span className="star"><img src={star} alt="" width="100%" /></span>
                         </div>
